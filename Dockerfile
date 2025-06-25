@@ -19,7 +19,7 @@ FROM node:18-alpine
 WORKDIR /app
 COPY backend/package*.json ./
 RUN npm install --production
-COPY backend/ ./
+COPY proyek-kopi-backend/ ./
 
 # INI BAGIAN KUNCINYA:
 # Salin hasil build frontend dari tahap 'builder' ke dalam folder 'build' di backend
