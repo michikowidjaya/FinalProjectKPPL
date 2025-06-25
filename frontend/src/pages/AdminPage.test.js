@@ -84,7 +84,7 @@ describe('AdminPage Component', () => {
     // Tunggu dan pastikan axios.post dipanggil dengan data yang benar
     await waitFor(() => {
       expect(axios.post).toHaveBeenCalledWith(
-        'http://localhost:3001/api/admin/products',
+        'https://michikowidjaya-fpkppl.hf.space/',
         expect.objectContaining({
           name: 'Kopi Tubruk',
           price: '15000',

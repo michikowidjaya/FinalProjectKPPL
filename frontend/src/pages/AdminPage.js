@@ -33,7 +33,7 @@ function AdminPage() {
     const fetchOrders = async () => {
         try {
             // Kita gunakan cache buster untuk memaksa permintaan baru
-            const url = `http://localhost:3001/api/admin/orders?cache_buster=${Date.now()}`;
+            const url = `https://michikowidjaya-fpkppl.hf.space/`;
             // Penting: Di sini kita menggunakan API instance dengan token jika user login
             const token = localStorage.getItem('token');
             const response = await axios.get(url, {
