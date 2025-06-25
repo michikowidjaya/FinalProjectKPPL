@@ -3,10 +3,10 @@
 const mysql = require('mysql2/promise');
 
 const pool = mysql.createPool({
-    host: 'aws-0-ap-southeast-1.pooler.supabase.com ',      // Alamat server database Anda
-    user: 'postgres.rzcqcpqkfchmehpwbvhj',           // User default XAMPP
-    password: 'Michikowidjaya3805',           // Password default XAMPP adalah kosong
-    database: 'postgres',// Nama database yang sudah Anda buat
+    host: 'http://srv1212.hstgr.io',      // Alamat server database Anda
+    user: 'u464386062_chiko_db',           // User default XAMPP
+    password: 'Chiko5525252',           // Password default XAMPP adalah kosong
+    database: 'u464386062_chiko_db',// Nama database yang sudah Anda buat
 });
 
 console.log("Koneksi ke database berhasil dibuat.");
