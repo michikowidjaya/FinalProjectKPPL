@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:3001/', 
+  baseURL: 'https://michikowidjaya-fpkppl.hf.space/', 
   headers: {
     'Content-Type': 'application/json',
   }

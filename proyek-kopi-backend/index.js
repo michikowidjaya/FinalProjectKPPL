@@ -33,8 +33,8 @@ app.use('/api/admin', adminRoutes);
 // Rute ini akan menangkap semua request yang bukan ke '/api'
 // dan mengembalikannya ke file index.html milik React.
 // Ini penting agar routing di sisi frontend (React Router) bisa bekerja.
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get('/', (req, res) => {
+    res.json("KPPPL API!")
 });
 // ------------------------------------
 
