@@ -80,7 +80,6 @@ exports.lihatSemuaPesanan = async (req, res) => {
                 o.shipping_address, 
                 o.status, 
                 o.created_at,
-                o.midtrans_transaction_id -- Jika ada kolom ini
             FROM orders o
             LEFT JOIN users u ON o.user_id = u.id -- Gabungkan dengan tabel users untuk nama pelanggan
             ORDER BY o.created_at DESC`
