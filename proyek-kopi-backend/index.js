@@ -11,7 +11,7 @@ const pelangganRoutes = require('./routes/pelanggan.routes');
 const adminRoutes = require('./routes/admin.routes.js');
 
 const app = express();
-const PORT = process.env.PORT || 3001; 
+const PORT = 7860; 
 
 // Middleware
 app.use(cors());
