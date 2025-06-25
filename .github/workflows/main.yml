@@ -25,7 +25,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git clone https://huggingface.co/spaces/michikowidjaya/FPKPPL
+          git clone https://huggingface.co/spaces/michikowidjaya/FPKPPL space
 
       # Update Git Remote URL and Pull Latest Changes
       - name: Update Remote and Pull Changes
