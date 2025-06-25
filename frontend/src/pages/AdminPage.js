@@ -88,7 +88,7 @@ function AdminPage() {
         e.preventDefault();
         try {
             const token = localStorage.getItem('token'); // Ambil token
-            const response = await axios.post('https://michikowidjaya-fpkppl.hf.space/', form, {
+            const response = await axios.post('https://michikowidjaya-fpkppl.hf.space/api', form, {
                 headers: {
                     Authorization: `Bearer ${token}` // Sertakan token di header
                 }
