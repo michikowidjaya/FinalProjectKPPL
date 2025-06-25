@@ -66,7 +66,7 @@ function AdminPage() {
     const handleStatusChange = async (orderId, newStatus) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.put(`http://localhost:3001/api/admin/orders/${orderId}/status`, 
+            await axios.put(`https://michikowidjaya-fpkppl.hf.space/`, 
                 { status: newStatus },
                 {
                     headers: {
@@ -88,7 +88,7 @@ function AdminPage() {
         e.preventDefault();
         try {
             const token = localStorage.getItem('token'); // Ambil token
-            const response = await axios.post('http://localhost:3001/api/admin/products', form, {
+            const response = await axios.post('https://michikowidjaya-fpkppl.hf.space/', form, {
                 headers: {
                     Authorization: `Bearer ${token}` // Sertakan token di header
                 }
