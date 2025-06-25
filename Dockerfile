@@ -17,7 +17,7 @@ RUN npm run build
 # === TAHAP 2: SETUP BACKEND & GABUNGKAN ===
 FROM node:18-alpine
 WORKDIR /app
-COPY backend/package*.json ./
+COPY proyek-kopi-backend/package*.json ./
 RUN npm install --production
 COPY proyek-kopi-backend/ ./
 
