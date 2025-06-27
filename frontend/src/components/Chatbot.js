@@ -16,7 +16,7 @@ const Chatbot = () => {
     const messagesEndRef = useRef(null);
 
     // --- PENTING: GANTI DENGAN API KEY ANDA ---
-    const OPENROUTER_API_KEY = "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"; // <-- LETAKKAN API KEY ANDA DI SINI
+    const OPENROUTER_API_KEY = "sensor"; // <-- LETAKKAN API KEY ANDA DI SINI
 
     const KOPIMENU_CONTEXT = `
         Nama Kedai: Kopikir. Jam Buka: Setiap hari, 08:00 - 22:00. Lokasi: Surabaya.
